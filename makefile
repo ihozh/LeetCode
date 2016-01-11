@@ -1,5 +1,5 @@
 all:
 	javac ListNode.java
-	javac MergeKSortList.java
-	java MergeKSortList
+	javac SwapNodes.java
+	java SwapNodes
 	rm  *.class
