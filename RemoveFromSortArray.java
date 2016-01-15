@@ -5,11 +5,8 @@
   > Created Time: Fri Jan 15 09:25:00 2016
  *********************************************************/
 
-import java.util.List;
-import java.util.ArrayList;
 public class RemoveFromSortArray {
 	public int removeDuplicates(int[] nums) {
-		List<Integer> answer = new ArrayList<Integer>();
 		int count = 0;
 		int len = nums.length;
 		for (int i = 1;i<len;i++) {
