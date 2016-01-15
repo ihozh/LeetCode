@@ -1,5 +1,5 @@
 all:
 	javac ListNode.java
-	javac SwapNodes.java
-	java SwapNodes
+	javac ReverseNodesInKgroup.java
+	java ReverseNodesInKgroup
 	rm  *.class
