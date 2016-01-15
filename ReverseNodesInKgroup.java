@@ -4,6 +4,22 @@
   > Mail: yihez@andrew.cmu.edu
   > Created Time: Mon Jan 11 16:44:26 2016
  *********************************************************/
+/**
+ * Reverse a link list between pre and next exclusively
+ * an example:
+ * a linked list:
+ * 0->1->2->3->4->5->6
+ * |           |
+ * pre        next
+ * after call pre = reverse(pre, next)
+ *
+ * 0->3->2->1->4->5->6
+ *          |  |
+ *          pre next
+ * @param pre
+ * @param next
+ * @return the reversed list's last node, which is the precedence of parameter next
+ */
 
 public class ReverseNodesInKgroup {
 	public ListNode reverseKGroup(ListNode head,int k) {

@@ -1,5 +1,4 @@
 all:
-	javac ListNode.java
-	javac ReverseNodesInKgroup.java
-	java ReverseNodesInKgroup
+	javac RemoveElement.java
+	java RemoveElement
 	rm  *.class
