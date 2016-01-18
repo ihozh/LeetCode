@@ -1,4 +1,4 @@
 all:
-	javac RemoveElement.java
-	java RemoveElement
+	javac ImplementStr.java
+	java ImplementStr
 	rm  *.class
