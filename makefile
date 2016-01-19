@@ -1,4 +1,4 @@
 all:
-	javac ImplementStr.java
-	java ImplementStr
+	javac DivideTwoInt.java
+	java DivideTwoInt
 	rm  *.class
