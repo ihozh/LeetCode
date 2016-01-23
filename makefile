@@ -1,4 +1,4 @@
 all:
-	javac ValidSudoku.java
-	java ValidSudoku
+	javac DivideTwoInt.java
+	java DivideTwoInt
 	rm  *.class

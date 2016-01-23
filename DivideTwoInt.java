@@ -13,6 +13,9 @@ public class DivideTwoInt {
 		if(dividend == Integer.MIN_VALUE) {
 			res = 1;
 			dividend += Math.abs(divisor);
+			if (divisor == -1) {
+				return Math.abs(Integer.MAX_VALUE);
+			}
 		}
 		if(divisor == Integer.MIN_VALUE) {
 			return res;
@@ -37,6 +40,8 @@ public class DivideTwoInt {
 	}
 	public static void main (String[] args) {
 		DivideTwoInt so = new DivideTwoInt();
-		System.out.println(so.divide(341,3));
+		int a = Math.abs(Integer.MIN_VALUE);
+		int b = Integer.MAX_VALUE;
+		System.out.println(so.divide(-2147483648,-1));
 	}
 }
