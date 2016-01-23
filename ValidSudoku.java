@@ -6,6 +6,7 @@
  *********************************************************/
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ValidSudoku {
 	public boolean isValidSudoku(char[][] board) {
@@ -31,7 +32,7 @@ public class ValidSudoku {
 					ele.add(board[j][i]);
 				}
 			}
-			ele.removeAll();
+			ele.clear();
 		}
 		return true;
 	}
@@ -48,7 +49,7 @@ public class ValidSudoku {
 					ele.add(board[i][j]);
 				}
 			}
-			ele.removeAll();
+			ele.clear();
 		}
 		return true;
 	}
@@ -64,11 +65,11 @@ public class ValidSudoku {
 						if (ele.indexOf(board[i+m][j+n]) != -1) {
 							return false;
 						} else {
-							ele.add(boardi[i+m][j+n]);
+							ele.add(board[i+m][j+n]);
 						}
 					}
 				}
-				ele.removeAll();
+				ele.clear();
 			}
 		}
 		return true;
@@ -76,6 +77,10 @@ public class ValidSudoku {
 	public static void main(String[] args) {
 		ValidSudoku so = new ValidSudoku();
 		String[] test = {".87654321","2........","3........","4........","5........","6........","7........","8........","9........"};
-		System.out.println(so.isValidSudoku(test));
+		char[][] testChar = new char[9][9];
+		for (int i = 0;i<9;i++) {
+			testChar [i] = test[i].toCharArray();
+		}
+		System.out.println(so.isValidSudoku(testChar));
 	}
 }
